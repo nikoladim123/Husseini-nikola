@@ -56,21 +56,39 @@ body {
 }
 
 .bottomLinks a {
-  color: rgb(220,220,220);
+  color: rgb(220, 220, 220);
   font-size: 1.1vw;
   text-decoration: none;
 }
-.bottomLinks a:hover{
+.bottomLinks a:hover {
   text-decoration: underline;
   text-shadow: 2px 2px 2px gray;
 }
 
 #projects h2 {
   text-align: center;
-  color: burlywood;
+  color: #3a3d40;
   font-size: 2vw;
 }
 
 #projects a {
   text-decoration: none;
+}
+
+@media (orientation: portrait) {
+  #navbar a {
+    font-size: 5vw;
+  }
+
+  #welcome-section h1 {
+    font-size: 7vw;
+  }
+
+  .bottomLinks a {
+    font-size: 5vw;
+  }
+
+  #projects h2 {
+    font-size: 5.5vw;
+  }
 }
