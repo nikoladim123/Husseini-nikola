@@ -1,24 +1,76 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  font-family: monospace;
 }
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: rgba(9, 9, 9, 0.8);
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: white;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px gray;
+}
+
 #welcome-section {
   background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   height: 100vh;
   padding: 0.1px;
+  position: relative;
 }
+
 #welcome-section h1 {
   margin: 0;
   margin-top: 35vh;
   text-align: center;
   color: white;
-  font-family: monospace;
   font-size: 5vw;
+}
+
+.bottomLinks {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1vw;
+  padding-bottom: 0.5vw;
+  box-sizing: border-box;
+}
+
+.bottomLinks a {
+  color: rgb(220,220,220);
+  font-size: 1.1vw;
+  text-decoration: none;
+}
+.bottomLinks a:hover{
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px gray;
 }
 
 #projects h2 {
   text-align: center;
   color: burlywood;
+  font-size: 2vw;
 }
+
 #projects a {
   text-decoration: none;
 }
